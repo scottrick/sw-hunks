@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="color_primary">#ffddbb00</color>
-    <color name="color_primary_vairant">#ffbb9900</color>
+    <color name="color_primary_variant">#ffbb9900</color>
     <color name="almost_black">#ff111111</color>
     <color name="almost_black_variant">#ff050505</color>
 </resources>
