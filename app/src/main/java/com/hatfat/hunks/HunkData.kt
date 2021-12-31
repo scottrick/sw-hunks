@@ -6,4 +6,5 @@ data class HunkData(
     val age: Int,
     val weight: String,
     val extra: String,
+    val isMatch: Boolean,
 )

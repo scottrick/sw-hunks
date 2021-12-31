@@ -24,8 +24,8 @@
         android:id="@+id/swipe_stack"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:orientation="vertical"
         android:layout_margin="32dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,14 +40,27 @@
             android:id="@+id/swipe_deck"
             android:layout_width="match_parent"
             android:layout_height="360dp"
-            android:padding="16dp"
             android:layout_gravity="center"
             android:background="@color/almost_black"
+            android:padding="16dp"
             swipedeck:card_spacing="10dp"
             swipedeck:max_visible="3"
             swipedeck:render_above="true"
             swipedeck:rotation_degrees="15" />
 
     </com.daprlabs.cardstack.SwipeFrameLayout>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="240dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:text="Back"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
