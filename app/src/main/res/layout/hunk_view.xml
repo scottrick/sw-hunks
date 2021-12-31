@@ -18,9 +18,14 @@
         <ImageView
             android:id="@+id/profile_image"
             android:layout_width="match_parent"
-            android:layout_height="192dp"
+            android:layout_height="224dp"
             android:scaleType="centerCrop"
             android:src="@mipmap/evax" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_primary_variant" />
 
         <TextView
             android:id="@+id/name"
@@ -33,8 +38,8 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/almost_black" />
+            android:layout_height="1dp"
+            android:background="@color/color_primary_variant" />
 
         <TextView
             android:id="@+id/extra_text"

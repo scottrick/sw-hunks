@@ -8,12 +8,16 @@
 
     <TextView
         android:id="@+id/textview_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="SUPER HUNKS"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_margin="16dp"
+        android:autoSizeMaxTextSize="200sp"
+        android:autoSizeMinTextSize="16sp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="Galactic SUPER HUNKS"
+        android:textAlignment="center"
         android:textColor="@color/color_primary"
-        android:textSize="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +28,7 @@
         android:id="@+id/swipe_stack"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="32dp"
+        android:layout_margin="0dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,14 +43,13 @@
         <com.daprlabs.cardstack.SwipeDeck
             android:id="@+id/swipe_deck"
             android:layout_width="match_parent"
-            android:layout_height="360dp"
+            android:layout_height="400dp"
             android:layout_gravity="center"
-            android:background="@color/almost_black"
             android:padding="16dp"
             swipedeck:card_spacing="10dp"
-            swipedeck:max_visible="3"
+            swipedeck:max_visible="5"
             swipedeck:render_above="true"
-            swipedeck:rotation_degrees="15" />
+            swipedeck:rotation_degrees="12" />
 
     </com.daprlabs.cardstack.SwipeFrameLayout>
 

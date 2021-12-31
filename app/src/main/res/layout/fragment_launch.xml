@@ -1,70 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LaunchFragment">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textview_first"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:shadowColor="#ff886611"
-        android:shadowDx="8"
-        android:shadowDy="8"
-        android:shadowRadius="12"
-        android:text="@string/super_hunks_title_1"
-        android:textAlignment="center"
-        android:textColor="@color/color_primary"
-        android:textSize="64dp"
-        app:layout_constraintBottom_toTopOf="@id/textview_second"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="4dp"
+        tools:context=".LaunchFragment">
 
-    <TextView
-        android:id="@+id/textview_second"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:shadowColor="#ff886611"
-        android:shadowDx="8"
-        android:shadowDy="8"
-        android:shadowRadius="12"
-        android:text="@string/super_hunks_title_2"
-        android:textAlignment="center"
-        android:textColor="@color/color_primary"
-        android:textSize="48dp"
-        app:layout_constraintBottom_toTopOf="@id/textview_third"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_first" />
+        <TextView
+            android:id="@+id/textview_first"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:autoSizeMaxTextSize="200sp"
+            android:autoSizeMinTextSize="32sp"
+            android:autoSizeTextType="uniform"
+            android:shadowColor="#ff886611"
+            android:shadowDx="8"
+            android:shadowDy="8"
+            android:shadowRadius="12"
+            android:text="@string/super_hunks_title_1"
+            android:textAlignment="center"
+            android:textColor="@color/color_primary" />
 
-    <TextView
-        android:id="@+id/textview_third"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:shadowColor="#ff886611"
-        android:shadowDx="8"
-        android:shadowDy="8"
-        android:shadowRadius="12"
-        android:text="@string/super_hunks_title_3"
-        android:textAlignment="center"
-        android:textColor="@color/color_primary"
-        android:textSize="96dp"
-        app:layout_constraintBottom_toTopOf="@id/button_first"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
 
-    <Button
-        android:id="@+id/button_first"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_third" />
+        <TextView
+            android:id="@+id/textview_second"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:autoSizeMaxTextSize="200sp"
+            android:autoSizeMinTextSize="16sp"
+            android:autoSizeTextType="uniform"
+            android:shadowColor="#ff886611"
+            android:shadowDx="8"
+            android:shadowDy="8"
+            android:shadowRadius="12"
+            android:text="@string/super_hunks_title_2"
+            android:textAlignment="center"
+            android:textColor="@color/color_primary" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <TextView
+            android:id="@+id/textview_third"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:autoSizeMaxTextSize="200sp"
+            android:autoSizeMinTextSize="32sp"
+            android:autoSizeTextType="uniform"
+            android:shadowColor="#ff886611"
+            android:shadowDx="8"
+            android:shadowDy="8"
+            android:shadowRadius="12"
+            android:text="@string/super_hunks_title_3"
+            android:textAlignment="center"
+            android:textColor="@color/color_primary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="96dp" />
+
+        <Button
+            android:id="@+id/button_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/next" />
+
+    </LinearLayout>
+</FrameLayout>
