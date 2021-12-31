@@ -52,6 +52,13 @@ class HunkFragment : Fragment() {
             false
         ),
         HunkData(
+            R.mipmap.wuher,
+            "Winston Wooderkin Wuher IV",
+            23,
+            "220 Lbs",
+            "Tends bar.  Was once accidentally stabbed in the chest by Ketwol.", false
+        ),
+        HunkData(
             R.mipmap.desanne,
             "Desanne",
             16,

@@ -30,11 +30,13 @@
         <TextView
             android:id="@+id/name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:autoSizeMaxTextSize="24dp"
+            android:autoSizeMinTextSize="12dp"
+            android:autoSizeTextType="uniform"
             android:padding="4dp"
             android:text="NAME"
-            android:textColor="@color/color_primary"
-            android:textSize="24dp" />
+            android:textColor="@color/color_primary" />
 
         <View
             android:layout_width="match_parent"
