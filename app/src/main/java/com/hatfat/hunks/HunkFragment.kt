@@ -19,8 +19,22 @@ class HunkFragment : Fragment() {
 
     private val hunkData = listOf(
         HunkData(R.mipmap.praji, "Praji", 35, "172 Lbs", "Enjoys long walks.", false),
-        HunkData(R.mipmap.lennox, "Xamuel Lennox", 41, "176 Lbs", "Don't ask about my day job.", false),
-        HunkData(R.mipmap.evax, "Evax", 34, "182 Lbs", "Allergic to cats.  Enjoys galactic golf.", false),
+        HunkData(
+            R.mipmap.lennox,
+            "Xamuel Lennox",
+            41,
+            "176 Lbs",
+            "Don't ask about my day job.",
+            false
+        ),
+        HunkData(
+            R.mipmap.evax,
+            "Evax",
+            34,
+            "182 Lbs",
+            "Allergic to cats.  Enjoys galactic golf.",
+            false
+        ),
         HunkData(
             R.mipmap.merrejk,
             "Merrejk",
@@ -45,8 +59,22 @@ class HunkFragment : Fragment() {
             "Demoted to shuttle duty.  Fear of rejection.",
             false
         ),
-        HunkData(R.mipmap.piett, "Firmus Piett", 40, "172 Lbs", "Native of Axxila.  Top of his graduating class.", false),
-        HunkData(R.mipmap.ozzel, "Kendal Ozzel", 38, "195 Lbs", "Clumsy & Stupid.  Loves surprises.", true),
+        HunkData(
+            R.mipmap.piett,
+            "Firmus Piett",
+            40,
+            "172 Lbs",
+            "Native of Axxila.  Top of his graduating class.",
+            false
+        ),
+        HunkData(
+            R.mipmap.ozzel,
+            "Kendal Ozzel",
+            38,
+            "195 Lbs",
+            "Clumsy & Stupid.  Loves surprises.",
+            true
+        ),
     )
 
     override fun onCreateView(
@@ -105,7 +133,7 @@ class HunkFragment : Fragment() {
                 .setView(matchView)
                 .setPositiveButton(
                     "Okay"
-                ) { p0, p1 -> Log.i("adsfadsf", "sadf") }
+                ) { _, _ -> Log.i("Tag", "__") }
                 .create()
                 .show()
         }
